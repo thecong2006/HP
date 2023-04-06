@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerHP : MonoBehaviour
 {
-    private float HP;
+    private float HP; //Máu hiện tại
     private float lerpTimer;
-    public float maxHP = 100f;
+    public float maxHP = 100f; //Máu tối đa
     public float chipSpeed = 2f;
 
-    public Image FronHP;
-    public Image BackHP;
+    public Image FronHP; //Thanh máu
+    public Image BackHP; //Dư ảnh sau khi mất máu
     // Start is called before the first frame update
     void Start()
     {
-        HP = maxHP;
+        HP = maxHP; //Sau khi vào game máu = máu tối đa
     }
 
     // Update is called once per frame
